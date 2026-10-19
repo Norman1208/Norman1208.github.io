@@ -1,10 +1,11 @@
-import { Source_Serif_4, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import { SITE } from "../data/content";
+import "@fontsource/source-serif-4/500.css";
+import "@fontsource/source-serif-4/600.css";
+import "@fontsource/ibm-plex-sans/400.css";
+import "@fontsource/ibm-plex-sans/500.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/ibm-plex-mono/500.css";
 import "./globals.css";
-
-const serif = Source_Serif_4({ subsets: ["latin"], weight: ["500", "600"], variable: "--font-serif" });
-const sans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-sans" });
-const mono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-mono" });
 
 export const metadata = {
   title: SITE.title,
@@ -13,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
+    <html lang="en">
       <body>{children}</body>
     </html>
   );

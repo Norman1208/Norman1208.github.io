@@ -7,6 +7,9 @@
   --accent: #1d4e89;
   --chip: #eef1f5;
   --pad-x: 96px;
+  --font-serif: 'Source Serif 4';
+  --font-sans: 'IBM Plex Sans';
+  --font-mono: 'IBM Plex Mono';
 }
 
 * { box-sizing: border-box; }
